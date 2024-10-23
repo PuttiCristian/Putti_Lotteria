@@ -47,5 +47,18 @@ Applicazione Java per simulare l'estrazione di numeri random da inserire in una 
 - import java.io.InputStreamReader: La classe InputStreamReader è un ponte tra flussi di byte e flussi di caratteri. Converte i byte letti da uno InputStream(flusso) in caratteri, consentendo la lettura del testo
 - import java.util.Scanner: La classe Scanner fa parte del pacchetto java.util ed è utilizzata per leggere l'input da diverse sorgenti, come la tastiera, file, stringhe, e altri flussi di input
 
+## descrizione 
+
+1) L'utente inserisce il numero vincente da cercare e le dimensioni della matrice dei numeri casuali che verranno generati casualmente e inseriti in essa con l'estrazione.
+
+2) Il thread principale crea una matrice di numeri casuali compresi tra 1 e 90. Questa matrice rappresenta l'estrazione della lotteria.
+
+3) Vengono creati diversi giocatori nel metodo main della classe Lotteria, ciascuno con un identificatore univoco. I giocatori partecipano alla lotteria selezionando un numero e cercando di indovinare uno dei numeri estratti.
+
+4) Utilizzando i thread, ogni giocatore verifica i numeri estratti contemporaneamente e, se trova una corrispondenza con quelli della matrice, viene dichiarato vincitore e il suo id viene inserito nell'array dei vincitori.
+
+5) Una volta completata l'estrazione e la verifica di tutti i giocatori, il gioco termina e vengono annunciati i risultati. I numeri estratti e i vincitori vengono stampati a schermo.
+
+
 ## Osservazioni
 Il progetto è stato scritto per scopi didattici e ha solo lo scopo di far comprendere le proprietà della classe Thread. 
