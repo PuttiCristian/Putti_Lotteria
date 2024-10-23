@@ -36,6 +36,16 @@ Applicazione Java per simulare l'estrazione di numeri random da inserire in una 
 3) Lotteria
    - metodi:
       - main: chiede in input il numero di righe e di colonne della matrice che dovrà contenere i numeri estratti casualmente e il numero vincente dell'estrazione. Crea 4 oggetti di tipo Giocatore e un oggetto di tipo Estrazione. Segnala l'inizio dell'estrazione con un output. Avvia i thread chiamado la funzione Start() su ogni oggetto Giocatore. Il programma attende che tutti i thread completino la loro esecuzione usando il metodo join() per evitare che il programma termini prima che tutti i processi siano completati. Segnala il termine dell'estrazione
+    
+## librerie
+
+- import java.util.Random: per creare oggetti di tipo Random su cui invocare il metodo nextInt() per generare numeri casuali
+- import java.util.logging.Level: La classe Level fa parte del pacchetto java.util.logging ed è utilizzata per definire i diversi livelli di gravità per i messaggi di log
+- import java.util.logging.Logger: La classe Logger è utilizzata per registrare messaggi di log in un'applicazione Java. Consente di tracciare eventi e informazioni, come errori, avvisi e informazioni utili per il debugging e il monitoraggio del sistema
+- import java.io.BufferedReader: La classe BufferedReader è utilizzata per leggere testo da un flusso di input
+- import java.io.IOException: La classe IOException è un'eccezione che viene lanciata quando si verifica un errore di input/output
+- import java.io.InputStreamReader: La classe InputStreamReader è un ponte tra flussi di byte e flussi di caratteri. Converte i byte letti da uno InputStream(flusso) in caratteri, consentendo la lettura del testo
+- import java.util.Scanner: La classe Scanner fa parte del pacchetto java.util ed è utilizzata per leggere l'input da diverse sorgenti, come la tastiera, file, stringhe, e altri flussi di input
 
 ## Osservazioni
 Il progetto è stato scritto per scopi didattici e ha solo lo scopo di far comprendere le proprietà della classe Thread. 
